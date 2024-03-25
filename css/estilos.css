@@ -12,11 +12,9 @@ button{cursor: pointer;}
 footer{padding: 15px 10px;}
 .pFixed{position: fixed;top: 0;left: 0;width: 100%;height: 100%;}
 .d-n{display: none;}
-#hyaLJDVt0r9AST{position: fixed;top: 38px;right: 20px;z-index: 200;min-width: 100px;border: 1px #8f8f8f solid;background:#303134;color: white;border-radius: 3px;margin: 0;padding: 1px 5px;}
-.krm15y{position: fixed;top: 67px;right: 20px;z-index: 200;min-width: 100px;border: 1px #8f8f8f solid;background: #303134;color: white;border-radius: 3px;margin: 0;padding: 1px 5px;}
-.LnPAS8P{position: fixed;top: 110px;right: 20px;z-index: 200;min-width: 100px;border: 1px #8f8f8f solid;background: #303134;color: white;border-radius: 3px;margin: 0;padding: 5px;display: flex;flex-direction: column;}.LnPAS8P div{height: 0px;margin: 0px;overflow: hidden;cursor: pointer;transition: all .3s;}.LnPAS8P:hover div{height: 20px;margin: 1px;}
-.Title{font-family: "Lobster Two", "Georgia", serif;font-weight: 700;font-style: italic;color: #6bdaea;letter-spacing: 3px;padding: 0px 10px;font-size: 200%;}
-.neon {color: #fff;margin-top: 30%;text-shadow:0 0 5px rgba(0,178,255,1),0 0 10px rgba(0,178,255,1),0 0 20px rgba(0,178,255,1),0 0 40px rgba(38,104,127,1),0 0 80px rgba(38,104,127,1),0 0 90px rgba(38,104,127,1),0 0 100px rgba(38,104,127,1),0 0 140px rgba(38,104,127,1),0 0 180px rgba(38,104,127,1);}
+.m0{margin: 0;}
+.p0{padding: 0;}
+.w100{width: 100%;}
 /*--------------------------------------------------------------------------*/
 
 .header{
@@ -42,10 +40,13 @@ display: flex;
 }
 .header li{
     margin: auto;
-    font-size: 220%;cursor: pointer;transition: all .3s;
+    font-size: 220%;cursor: pointer;transition: all .3s;display: flex;
+    flex-direction: column;
 }
 .header li:hover{transform: scale(1.5);}
-
+.header li span{font-size: 15px;
+    margin-top: -10px;
+}
 
 .encabezado-home{
 background: url(../img/fondo-home.jpg) top center;
@@ -53,6 +54,7 @@ background: url(../img/fondo-home.jpg) top center;
     background-size: cover;
     height: 100vh;
     color: white;
+    text-align: center;
 }
 .encabezado-home .content{
     background: #111111c9;
@@ -62,13 +64,19 @@ background: url(../img/fondo-home.jpg) top center;
     flex-direction: column;
     align-items: center;
 }
+.encabezado-home .content > div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 .encabezado-home .content h1{
 font-size: 300%;
     margin-top: auto;
 }
 .encabezado-home .content p{
 width: 80%;
-    text-align: center;
+    text-align: center;margin: 0px auto;
 }
 .encabezado-home .content .bajar{
 margin: auto;
@@ -79,16 +87,83 @@ margin: auto;
 
 }
 
+#section-1{
+    margin: 30px 0px;
+}
+#section-1 .row > div{
+        display: flex;
+    flex-direction: column;
+}
+#section-1 .row > div img{
+        width: 80%;
+    margin: auto;
+}
+#section-1 .row > div h3{
+    border-bottom: 2px #6c757d solid;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+.link_ext{
+    background: url(../img/fondo-home.jpg) top center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    margin: 50px 0px;
+    padding: 50px 20px;
+}
+
+.link_ext .col-12{
+
+}
+.link_ext .col-12 > div{
+    display: flex;
+    min-height: 150px;
+    margin: 10px;
+    border: 1px #6c757d solid;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px;
+    background: #495057c4;
+    padding: 5px;
+}
+.link_ext .col-12 > div img{
+    width: 100px;
+    margin: 10px;
+}
 
 
 
 
 
 
+@media (min-width: 768px){
+.encabezado-home .content {flex-direction: row;}
+
+.link_ext{padding: 50px 20px;}
+
+}
 
 
+@media (min-width: 1024px){
+.encabezado-home .content h1 {font-size: 400%;}
+.encabezado-home .content p {width: 80%;font-size: 120%;}
+.encabezado-home .logo {width: 500px;height: 500px;}
+.encabezado-home .content .bajar {font-size: 350%;}
+
+#section-1 .row > div img {width: 80%;}
+#section-1 .row > div h3 {font-size: 240%;}
+#section-1 .row > div p {font-size: 110%;}
+
+.link_ext{padding: 70px 40px;}
+.link_ext .col-12 > div img {width: 130px;}
+.link_ext .col-12 > div {min-height: 200px;}
 
 
+}
 
 
+@media (min-width: 1440px){
+    .link_ext .col-12 > div {min-height: 150px;}
+}
 

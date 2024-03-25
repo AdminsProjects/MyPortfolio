@@ -72,9 +72,6 @@ var temp1,temp2,temp3;
 
 
 /*---------------------------------------------------------------------------------------------------*/
-$(".LnPAS8P div").each(function(i) {$this = $(this);$this.css("background",$this.html());});
-$(window).scroll(function() {$('#hyaLJDVt0r9AST span').html($('#hyaLJDVt0r9AST').offset().top - 35);/*if ($('').offset().top > #){$('')addClass('');}else{$('').removeClass('');}*/});
-document.onmouseover = function(e){getId('getPosX').innerHTML = 'pX - ' + e.pageX;getId('getPosY').innerHTML = 'pY - ' + (e.pageY - getScroll());}
 
 function aCaracter(a,b){var temp,sum = "";var c = ["qwertyuiopasdfghjklzxcvbnm","QWERTYUIOPASDFGHJKLZXCVBNM","0123456789"];if (a == undefined) {a=10;}for (var i = 0; i < a; i++) {if (b == undefined){temp = c[aNumero(2)];temp = temp[aNumero(temp.length - 1)];}else{do{temp = aNumero(2);if (temp == 0 && b.indexOf("q") != -1) {temp = c[temp];temp = temp[aNumero(temp.length - 1)];}else if(temp == 1 && b.indexOf("Q") != -1){temp = c[temp];temp = temp[aNumero(temp.length - 1)];}else if(temp == 2 && b.indexOf("1") != -1){temp = c[temp];temp = temp[aNumero(temp.length - 1)];}else{temp = -1;}}while(temp == -1);}sum += temp;}return sum;}
 function aNumero(a,b,c){var temp;if (b == undefined){b = a;a = 0;}do{temp = Math.random()*b;}while(a >= temp);if (c == undefined){temp=Math.round(temp);}else{temp = temp.toFixed(c);}return temp;}
