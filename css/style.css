@@ -19,6 +19,11 @@ footer{padding: 15px 10px;}
 /*--------------------------------------------------------------------------*/
 
 /**{border: 1px red solid;}*/
+.filter{
+    background: #00000057;
+    backdrop-filter: blur(1.5rem);
+}
+
 
 .body{
 background: url(../img/fondo-home.jpg) no-repeat top center;
@@ -34,8 +39,6 @@ nav{
     width: 60px;
     height: 100vh;
     place-self: stretch;
-    background: var(--background);
-    backdrop-filter: blur(1.5rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,7 +83,7 @@ margin-top: auto;
 }
 
 .section-1{padding: 20px;}
-.section-1 .row{backdrop-filter: blur(1.5rem);border: 1px #081b2a87 solid;border-radius: 7px;box-shadow: 1px 1px 2px black;}
+.section-1 .row{border: 1px #081b2a87 solid;border-radius: 7px;box-shadow: 1px 1px 2px black;}
 .section-1 .row > div{padding: 30px;display: flex;flex-direction: column;}
 
 .section-1 .row .tarjet{position: relative;
@@ -127,8 +130,6 @@ margin-top: auto;
 .section-2{padding: 10px;}
 .section-2 ol{list-style: none;padding: 0;margin: 0;}
 .section-2 .item{
-	background: var(--background);
-    backdrop-filter: blur(1.5rem);
     margin: 35px 12px;
     border-radius: 7px;
     position: relative;
@@ -181,8 +182,6 @@ margin-top: auto;
 }.skills li{
     width: 100%;
     margin: 11px;
-    background: var(--background);
-    backdrop-filter: blur(1.5rem);
     display: flex;
     padding: 10px;
     box-shadow: 0px 0px 5px black;
