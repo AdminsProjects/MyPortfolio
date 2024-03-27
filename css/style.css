@@ -48,6 +48,11 @@ nav ol{
     margin: auto;
     list-style: none;
 }
+nav ol li{display: flex;
+}
+nav ol li a{    color: white;
+    margin: auto;
+}
 .body > .content-body{
     min-height: 100vh;
     width: 94%;
@@ -128,7 +133,7 @@ margin-top: auto;
     border-radius: 7px;
     position: relative;
     padding: 25px;
-
+    box-shadow: 0px 0px 5px black;
 }
 .section-2 .item h2{
     position: absolute;
@@ -168,6 +173,35 @@ margin-top: auto;
     right: -30px;
     transform: rotate(20deg);
 }
+
+
+/*--------------- skills ---------------------*/
+.skills{
+    
+}.skills li{
+    width: 100%;
+    margin: 11px;
+    background: var(--background);
+    backdrop-filter: blur(1.5rem);
+    display: flex;
+    padding: 10px;
+    box-shadow: 0px 0px 5px black;
+    align-items: center;
+    border-radius: 7px;
+}.skills li img{
+        margin: 0px 10px;
+}
+.skills .right li{
+    flex-direction: row-reverse;
+}
+.skills .center-img{
+    display: flex;
+}
+.skills .center-img{
+    margin: auto;
+}
+
+
 
 .redes-sociales{
 	    margin: 35px;
