@@ -2,8 +2,9 @@ $(function() {
 var temp1,temp2,temp3;
 
 
-
-
+setTimeout(function(){
+	$(".loading.filter").css("display","none");
+},4000);
 
 
 
